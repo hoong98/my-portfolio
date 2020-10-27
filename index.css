@@ -17,7 +17,7 @@ html{
 }
 
 body{
-   
+  font-family: 'Playfair Display', serif;
 }
 
 /* Navbar */
@@ -196,10 +196,10 @@ span{
 }
 .text a{
    text-decoration: none;
-   color: var(--mainPurple);
+   color: #a55eea;
 }
 .text a:hover{
-   color: var(--lightPurple);
+   color: #8854d0;
 }
 /* End Project */
 
