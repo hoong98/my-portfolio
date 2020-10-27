@@ -1,0 +1,354 @@
+:root {
+    --mainPurple:#c56cf0;
+    --softPurple:#d96fff;
+    --lightPurple:#cd84f1;
+    --mainWhite:rgb(206, 249, 255);
+    --mainDark:#4b4b4b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+   
+}
+
+/* Navbar */
+.navbar-custume{
+    background-color:  var(--mainPurple) !important;
+}
+.navbar-brand{
+    color:var(--lightPurple);
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    transition: all 1s linear; 
+    animation: scalebounce 2s infinite;
+}
+.navbar-brand:hover{
+    color:var(--mainDark);
+}
+span{
+    color:var(--mainWhite);
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.toggle-icon{
+    color: var(--mainWhite);
+    font-size: 2rem;
+}
+
+.navbar-nav li{
+    padding:10px 20px;
+}
+.navbar-nav li a{
+    color: var(--mainWhite);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    transition: all 1s linear ;
+}
+.navbar-nav li a:hover{
+    color: var(--mainDark);
+    
+}
+/* End Navbar */
+/* Welcome Section */
+.welcome {
+  background-image: url("img/img1.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 90vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.welcome::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 90vh;
+  width: 100%;
+  background-color:var(--lightPurple);
+  opacity: .3;
+  z-index: -1;
+}
+.welcome-dis{
+    display: grid;
+    place-items: center;
+    padding-top: 20rem;
+}
+.welcome-dis h1 {
+  display: block;
+  width: fit-content;
+  letter-spacing: 4px;
+  font-size: 2rem;
+  position: relative;
+  color: transparent;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1s;  
+}
+
+.welcome-dis h1:nth-child(1) {
+  animation-delay: 1s;
+}
+.welcome-dis h1:nth-child(2) {
+  animation-delay: 2s;
+}
+.welcome-dis h1:nth-child(3) {
+  animation: text_reveal_name 0.5s ease forwards;
+  animation-delay: 3s;
+}
+
+.welcome-dis h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: rgba(138, 0, 138, 0.329);
+  animation: text_reveal_box 1s ease;
+  animation-delay: 0.5s;
+  border-radius: 5px 50px;
+}
+.welcome-dis h1:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+.welcome-dis h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+.welcome-dis h1:nth-child(3) span {
+  animation-delay: 2.5s;
+}
+/* End Welcome Section */
+
+/* Project */
+#project{
+  padding-bottom: 4rem;
+}
+.project-header{
+    padding:3rem;
+    color: var(--softPurple);
+    letter-spacing: 5px;
+    font-weight: bold;
+    animation: scaletext 5s infinite;
+}
+.container-project {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  background-color: var(--mainDark);
+  border: 1px solid var(--mainDark);
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+}
+.container-project:hover {
+  box-shadow: 5px 5px 15px 5px  rgba(0,0,0,0.7);
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  object-fit: cover;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-project:hover .image {
+  opacity: 0.4;
+}
+
+.container-project:hover .middle {
+  opacity: 0.9;
+}
+
+.text {
+  background-color:white;
+  color: var(--mainDark);
+  border-radius: 10px;
+  padding: 16px 32px;
+}
+.text h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:var(--softPurple)
+}
+.text a{
+   text-decoration: none;
+   color: var(--mainPurple);
+}
+.text a:hover{
+   color: var(--lightPurple);
+}
+/* End Project */
+
+/* Contact */
+#contact {
+  background-image: url("img/img1.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding-bottom:40px;
+  height:100%;
+  max-width:100vw;
+  position: relative;
+  z-index: 1;
+}
+#contact::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width:100vw;
+  background:var(--lightPurple);
+  opacity: .3;
+  z-index: -1;
+}
+.contact-form{
+  margin: 0 auto;
+  background-color: var(--softPurple);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px var(--mainPurple);
+  width:80%;
+  padding:20px;
+  opacity: 1;
+}
+
+label h3{
+  font-size: 1rem;
+}
+
+input[type=text],input[type=email],input[type=phone]{
+  width:100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 5px solid #8c7ae6;
+}
+
+textarea{
+  width: 100%;
+  color:black;
+  margin-top: 10px;
+  resize: none;
+}
+
+.submit-btn{
+  width: 100%;
+  padding:10px;
+  background: none;
+  outline: none;
+  border:2px solid #8c7ae6;
+  border-radius: 10px;
+  color: var(--mainWhite);
+}
+.submit-btn:hover{
+  background-color: #8c7ae6;
+  color:var(--mainWhite)
+}
+
+.contact-icon{
+  display: flex;
+  justify-content: center;
+}
+.contact-icon a{
+  padding:20px;
+  font-size: 2rem;
+  color:var(--mainPurple)
+}
+.contact-icon a:hover{
+  color:var(--mainWhite)
+}
+.lead{
+  color:#8c7ae6;
+  font-size: 1.6rem;
+}
+/* End Contact */
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--mainPurple);
+  color: var(--mainWhite);
+  letter-spacing: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+/* End Footer Section */
+/* Key Frames */
+@keyframes scalebounce{
+    0%{
+        transform:scale(0.5);
+    }
+    25%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(0.8);
+    }
+    75%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(0.5);
+    }
+}
+
+@keyframes scaletext{
+    0%{
+        transform:scale(1);
+    }
+    
+    50%{
+        transform:scale(0.6);
+    }
+    
+    100%{
+        transform:scale(1);
+    }
+}
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes text_reveal {
+  100% {
+    color: var(--mainWhite);
+  }
+}
+@keyframes text_reveal_name {
+  100% {
+    color: var(--softPurple);
+  }
+}
+/* End Key Frames */

@@ -1,137 +1,271 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PORTFOLIO</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-  <link rel="stylesheet" href="portfolio.css" </head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+    <title>PORTFOLIO</title>
+
+    <script src="https://kit.fontawesome.com/7e207795be.js" crossorigin="anonymous"></script>
+
+
+</head>
 
 <body>
-  <!--Nav Section-->
-  <div class="nav-container">
-    <div class="logo">
-      <a href="index.html">Port<span>F</span>olio</a>
+    <!--Nav Section-->
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-custume sticky-top">
+            <!-- <div class="container-fluid"> -->
+            <a class="navbar-brand pl-4" href="index.html">Port<span>F</span>olio</a>
+            <button id="btn-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-toggle-off toggle-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#welcome"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project"><i class="fas fa-project-diagram"></i> Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="far fa-id-badge"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- </div> -->
+        </nav>
+    </section>
+
+    <!-- End Nav Section-->
+
+    <!-- Welcom Section -->
+    <section id="welcome">
+        <div class="welcome container-fluid">
+            <div class="welcome-dis">
+                <h1>Hello <i class="far fa-smile"></i><span></span></h1>
+                <h1>My Name Is <span></span></h1>
+                <h1>Hoong <span></span></h1>
+            </div>
+        </div>
+    </section>
+    <!-- End Welcome Section-->
+
+    <!-- Project Section -->
+    <section id="project">
+        <div class="text-title text-center">
+            <h2 class="project-header">Project</h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 text-center">
+                    <div class="container-project">
+                        <img src="./img/image1.PNG" alt="Avatar" class="img-fluid image">
+                        <div class="middle">
+                            <div class="text">
+                                <h3 class='project-title'>Random Quote Machine</h3>
+                                <a href="https://codepen.io/hoong98/full/OJNVvGW">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 text-center">
+                    <div class="container-project">
+                        <img src="./img/image2.JPG" alt="Avatar" class="image">
+                        <div class="middle">
+                            <div class="text">
+                                <h3 class='project-title'>Landing Page</h3>
+                                <a href="https://hoong98.github.io/steelcafe/">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 text-center">
+                    <div class="container-project">
+                        <img src="./img/image3.JPG" alt="Avatar" class="image">
+                        <div class="middle">
+                            <div class="text">
+                                <h3 class='project-title'>Documentation Page</h3>
+                                <a href="https://codepen.io/hoong98/full/MWKVJmo">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 text-center">
+                    <div class="container-project">
+                        <img src="./img/image4.JPG" alt="Avatar" class="image">
+                        <div class="middle">
+                            <div class="text">
+                                <h3 class='project-title'>Calculator</h3>
+                                <a href="https://codepen.io/hoong98/full/poybpvb">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 text-center">
+                    <div class="container-project">
+                        <img src="./img/image5.JPG" alt="Avatar" class="image">
+                        <div class="middle">
+                            <div class="text">
+                                <h3 class='project-title'>Survey Form</h3>
+                                <a href="https://codepen.io/hoong98/full/MWKVGWV">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4   mb-4 text-center">
+                    <div class="container-project">
+                        <img src="./img/image6.JPG" alt="Avatar" class="image">
+                        <div class="middle">
+                            <div class="text">
+                                <h3 class='project-title'>Markdown Page</h3>
+                                <a href="https://codepen.io/hoong98/full/XWdbQgw">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-title text-center">
+            <h2 class="project-header">React Project</h2>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mx-auto mb-4 text-center">
+                    <div class="container-project">
+                        <img src="./img/img2.JPG" alt="Avatar" class="img-fluid image">
+                        <div class="middle">
+                            <div class="text">
+                                <h3 class='project-title'>Tour Page</h3>
+                                <a href="https://tour-hoong.netlify.app/">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mx-auto mb-4 text-center">
+                    <div class="container-project">
+                        <img src="./img/img3.JPG" alt="Avatar" class="img-fluid image">
+                        <div class="middle">
+                            <div class="text">
+                                <h3 class='project-title'> Menu Page</h3>
+                                <a href="https://menu000.netlify.app/">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 mx-auto col-lg-4 mb-4 text-center">
+                    <div class="container-project">
+                        <img src="./img/img4.JPG" alt="Avatar" class="img-fluid image">
+                        <div class="middle">
+                            <div class="text">
+                                <h3 class='project-title'>Tea Drop</h3>
+                                <a href="https://e-store-app.netlify.app/">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Project Section -->
+
+    <!-- Contact -->
+    <section id='contact'>
+
+        <div class="text-title text-center">
+            <h2 class="project-header">Contact</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-lg-6 mx-auto">
+                <div class="conatainer contact-form">
+                    <form action='#' method="POST">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 mx-auto">
+                                <label for='name'>
+                                    <h3>Full Name :</h3>
+                                </label>
+                                <input type='text' name='name' placeholder="John Doe" required>
+                            </div>
+                            <div class="col-sm-12 col-md-12 mx-auto">
+                                <label for='email'>
+                                    <h3>Email :</h3>
+                                </label>
+                                <input type='email' name='email' placeholder="John@email.com" required>
+                            </div>
+                            <div class="col-sm-12 col-md-12 mx-auto">
+                                <label for='phone'>
+                                    <h3>Phone :</h3>
+                                </label>
+                                <input type='phone' name='phone' placeholder="012-xxxx229" required>
+                            </div>
+                            <div class="col-sm-12 col-md-12 mx-auto">
+                                <textarea placeholder="Some text..." rows="4" cols="50" required>
+                                </textarea>
+                            </div>
+
+                            <div class="col-sm-12  mx-auto">
+                                <button type="submit" class='submit-btn'>Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-lg-6 mx-auto">
+                <div class="d-none d-md-block col-md-12 text-center text-capitalize mt-5">
+                    <h6 class="lead">learning coding on <i class="fab fa-free-code-camp">FreeCodeCamp</i></h6>
+                </div>
+                <div class="col-md-12 contact-icon">
+                    <a href='#'><i class="fab fa-instagram"></i></a>
+                    <a href='#'><i class="fab fa-facebook"></i></a>
+                    <a href='#'><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <h6>Make with <i class="far fa-heart"></i> by Hoong </h6>
     </div>
-    <nav class="nav-item">
-      <ul>
-        <li class="nav-link active"><a href="#welcome">Home</a></li>
-        <li class="nav-link"><a href="#project">Project</a></li>
-        <li class="nav-link"><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-  <!-- End Nav Section-->
-  <!-- Welcom Section -->
-  <div id="welcome" class="welcome container">
-    <div class="welcome-dis">
-      <h1>Hello <i class="far fa-smile"></i><span></span></h1>
-      <h1>My Name Is <span></span></h1>
-      <h1>Hoong <span></span></h1>
-    </div>
-  </div>
-  <!-- End Welcome Section-->
-  <!-- Project Section -->
-  <div id="project" class="project">
-    <div class="project-title">Project</div>
-
-    <div class="grid">
-
-      <div class="project-container">
-        <img src="./img/img2.PNG" alt="Project" class="image">
-        <div class="middle">
-          <div class='text'>
-            <p>Front End Libraries Projects - Build a Drum Machine</p>
-            <br>
-            <a href="https://codepen.io/hoong98/full/RwaaPPK">View</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-container">
-        <img src="./img/img3.PNG" alt="Project" class="image">
-        <div class="middle">
-          <div class='text'>
-            <p>Front End Libraries Projects - Random Quote Machine</p>
-            <br>
-            <a href="https://codepen.io/hoong98/full/OJNVvGW">View</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-container">
-        <img src="./img/img5.PNG" alt="Project" class="image">
-        <div class="middle">
-          <div class='text'>
-            <p>Front End Libraries Projects - Markdown Previewer</p>
-            <br>
-            <a href="https://codepen.io/hoong98/full/XWdbQgw">View</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-container">
-        <img src="./img/img6.JPG" alt="Project" class="image">
-        <div class="middle">
-          <div class='text'>
-            <p>Front End Libraries Projects - Landing Page</p>
-            <br>
-            <a href="https://hoong98.github.io/steelcafe/">View</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="project-title">React Project</div>
-
-    <div class='grid'>
-
-      <div class="project-container">
-        <img src="./img/img4.JPG" alt="Project" class="image">
-        <div class="middle">
-          <div class='text'>
-            <p>Tour Map</p>
-            <br>
-            <a href="https://tour-hoong.netlify.app/">View</a>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="project-container">
-        <img src="./img/img8.JPG" alt="Project" class="image">
-        <div class="middle">
-          <div class='text'>
-            <p>Menu</p>
-            <br>
-            <a href="https://menu000.netlify.app/">View</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <!-- End Project Section -->
-  <!-- Contact Section -->
-  <div id="contact" class="contact">
-    <div class="contact-title">Contact</div>
-    <div class="contact-item">
-      <a href="https://www.facebook.com/weihoong.wong.5/"><i class="fab fa-facebook"> Facebook</i></a>
-      <a href="https://codepen.io/hoong98"><i class="fab fa-codepen"> CodePen</i></a>
-      <a href="https://www.freecodecamp.org/hoong98"><i class="fab fa-free-code-camp"> FreeCodeCamp</i></a>
-      <a href="https://github.com/hoong98"><i class="fab fa-github"> Github</i></a>
-    </div>
-  </div>
-  <!-- End Contact Section -->
-  <!-- Footer Section -->
-  <div class="footer">
-    <h1>Make with <i class="far fa-heart"></i> by Hoong </h1>
-  </div>
-  <!-- End Footer Section -->
+    <!-- End Footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").on("click", function () {
+                $(this).find($(".fas")).toggleClass('fa-toggle-off fa-toggle-on');
+            });
+        });
+    </script>
 </body>
 
 </html>
