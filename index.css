@@ -12,15 +12,13 @@
     box-sizing: border-box;
 }
 
-html{
-    
+html{  
     scroll-behavior: smooth;
 }
 
 body{
   font-family: 'Playfair Display', serif;
-  overflow-x: hidden;
-  
+  width:100vw;
 }
 
 /* Navbar */
@@ -29,7 +27,7 @@ body{
 }
 .navbar-brand{
     color:var(--lightPurple);
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 4px;
     transition: all 1s linear; 
     animation: scalebounce 2s infinite;
@@ -51,26 +49,27 @@ span{
 }
 
 .navbar-nav li{
-    padding:10px 20px;
+    margin:0 10px;
 }
+
 .navbar-nav li a{
     color: var(--mainWhite);
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     transition: all 1s linear ;
+    
 }
 .navbar-nav li a:hover{
     color: var(--mainDark);
-    
 }
 /* End Navbar */
 /* Welcome Section */
 .welcome {
-  background-image: url("img/img1.jpg");
+  background-image: url("img/img.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   min-height: 90vh;
-  width: 100%;
+  max-width: 100vw;
   position: relative;
   z-index: 1;
 }
@@ -80,9 +79,9 @@ span{
   top: 0;
   left: 0;
   min-height: 90vh;
-  width: 100%;
-  background-color:var(--lightPurple);
-  opacity: .3;
+  max-width: 100vw;
+  background-color:rgba(0,0,0,0.8);
+  opacity: .5;
   z-index: -1;
 }
 .welcome-dis{
@@ -137,6 +136,7 @@ span{
 /* Project */
 #project{
   padding-bottom: 4rem;
+  margin: 0 40px;
 }
 .project-header{
     padding:3rem;
@@ -148,7 +148,7 @@ span{
 .container-project {
   position: relative;
   width: 100%;
-  height: 380px;
+  height: 350px;
   background-color: var(--mainDark);
   border: 1px solid var(--mainDark);
   box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
@@ -224,18 +224,34 @@ span{
   left: 0;
   height:100%;
   width:100%;
-  background:var(--lightPurple);
-  opacity: .3;
+  background:rgba(0,0,0,0.8);
+  opacity: .6;
   z-index: -1;
 }
 .contact-form{
   margin: 0 auto;
-  background-color: #a55eea;
-  border-radius: 10px;
-  box-shadow: 1px 1px 5px 1px #8854d0;
+  background-image: url('./img/imagebg.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  border-radius: 2rem;
   width:80%;
   padding:20px;
   opacity: 1;
+}
+
+.contact-form:after{
+   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width:100%;
+  border-radius: 2rem;
+  background:var(--lightPurple);
+  opacity: 0.6  ;
+  z-index: -1;
 }
 
 label h3{
@@ -304,6 +320,25 @@ textarea{
   font-weight: bold;
 }
 /* End Footer Section */
+
+@media only screen and (min-width: 1170px) {
+ 
+.navbar-brand{
+    font-size: 2rem;
+}
+
+.navbar-nav li {
+  
+    margin:0 10px;
+
+}
+
+.navbar-nav li a{
+    font-size: 1.5rem;
+}
+
+}
+
 /* Key Frames */
 @keyframes scalebounce{
     0%{
@@ -313,7 +348,7 @@ textarea{
         transform:scale(1);
     }
     50%{
-        transform:scale(0.8);
+        transform:scale(0.5);
     }
     75%{
         transform:scale(1);
