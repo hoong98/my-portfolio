@@ -26,17 +26,17 @@ body{
     background-color:  var(--mainPurple) !important;
 }
 .navbar-brand{
-    color:var(--lightPurple);
+    color:var(--mainWhite);
     font-size: 1rem;
-    letter-spacing: 4px;
-    transition: all 1s linear; 
-    animation: scalebounce 2s infinite;
+    letter-spacing: 4px; 
+    animation: scalebounce 5s infinite;
 }
 .navbar-brand:hover{
     color:var(--mainDark);
+    transition: all 1s ease-in-out;
 }
 span{
-    color:var(--mainWhite);
+    color:var(--mainDark);
 }
 
 .navbar-toggler:focus{
@@ -55,17 +55,18 @@ span{
 .navbar-nav li a{
     color: var(--mainWhite);
     font-size: 1rem;
-    letter-spacing: 2px;
-    transition: all 1s linear ;
-    
+    letter-spacing: 2px;    
 }
+
 .navbar-nav li a:hover{
     color: var(--mainDark);
+    transition: all 1s ease-in-out ;
 }
 /* End Navbar */
 /* Welcome Section */
 .welcome {
   background-image: url("img/img.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
   min-height: 90vh;
@@ -148,7 +149,7 @@ span{
 .container-project {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 300px;
   background-color: var(--mainDark);
   border: 1px solid var(--mainDark);
   box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
@@ -233,6 +234,7 @@ span{
   background-image: url('./img/imagebg.jpg');
   background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
   position: relative;
   z-index: 1;
   border-radius: 2rem;
@@ -335,6 +337,15 @@ textarea{
 
 .navbar-nav li a{
     font-size: 1.5rem;
+}
+
+.container-project {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: var(--mainDark);
+  border: 1px solid var(--mainDark);
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
 }
 
 }
