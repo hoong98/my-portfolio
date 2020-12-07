@@ -65,6 +65,7 @@
 
     <div class="text-title text-center">
         <h2 class="project-header">Project</h2>
+        <button class="onlight"><i class="fas fa-power-off"></i><span>Light</span></button>
     </div>
 
     <section id="project">
@@ -265,10 +266,21 @@
         crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
-            $("button").on("click", function () {
+            $("#btn-toggle").on("click", function () {
                 $(this).find($(".fas")).toggleClass('fa-toggle-off fa-toggle-on');
             });
+
+            $('.onlight').on('click', function () {
+                $(document.body).toggleClass('nightmode');
+                $('.container-project').toggleClass('active');
+                $(this).find("span").text(function (i, text) {
+                    return text === "Light" ? "Night" : "Light";
+                })
+
+
+            })
         });
+
     </script>
 </body>
 
